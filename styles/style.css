@@ -1,0 +1,23 @@
+body {
+   margin: 0;
+   display: flex;
+}
+
+#sideNav {
+   flex: 1;
+   background-color: aquamarine;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.navList {
+   list-style: none;
+}
+
+main {
+   flex: 4;
+   height: 100vh;
+}
+
