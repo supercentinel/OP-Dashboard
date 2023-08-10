@@ -1,23 +1,110 @@
 body {
+   font-family: hack;
    margin: 0;
    display: flex;
 }
 
+img { /* svg on an img tag */
+  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
+          filter: invert(.75);
+}
+
 #sideNav {
    flex: 1;
-   background-color: aquamarine;
+   color: beige;
    height: 100vh;
    display: flex;
    flex-direction: column;
-
+   font-size: 20px;
+   background-color: #0c0c56;
+   opacity: 1;
+   background-image:  linear-gradient(30deg, #23256b 12%, transparent 12.5%, transparent 87%, #23256b 87.5%, #23256b), linear-gradient(150deg, #23256b 12%, transparent 12.5%, transparent 87%, #23256b 87.5%, #23256b), linear-gradient(30deg, #23256b 12%, transparent 12.5%, transparent 87%, #23256b 87.5%, #23256b), linear-gradient(150deg, #23256b 12%, transparent 12.5%, transparent 87%, #23256b 87.5%, #23256b), linear-gradient(60deg, #23256b77 25%, transparent 25.5%, transparent 75%, #23256b77 75%, #23256b77), linear-gradient(60deg, #23256b77 25%, transparent 25.5%, transparent 75%, #23256b77 75%, #23256b77);
+   background-size: 20px 35px;
+   background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
 }
+
+#NavLogo {
+   flex: 1;
+}
+
+#navLogo > h1 > img {
+   height: 1em;
+}
+
+#navItems {
+   flex: 3;
+}
+
+#navExtra {
+   flex: 1;
+}
+
 
 .navList {
    list-style: none;
 }
 
+.itemLogo {
+   height: 1em;
+}
+
 main {
    flex: 4;
    height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+#topBar {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   border: 2px solid red;
+}
+
+#searchBar {
+   flex: 1;
+   display: flex;
+}
+
+#actualSearchBar {
+   background-color: grey;
+   border: transparent;
+   border-radius: 25px;
+   flex: 2;
+   display: flex;
+   margin: 10px;
+}
+
+#actualSearchBar > img {
+   height: 2em;
+   margin: 5px;
+   flex: 0.5;
+}
+
+#searchInput {
+   color: white;
+   font-size: 20px;
+   background-color: transparent;
+   margin-top: 0;
+   border: none;
+   flex: 9;
+}
+
+#searchInput:focus {
+   outline: none;
+}
+
+#userSpace {
+   flex: 1;
+}
+
+#userBar {
+   flex: 1.5;
+   border: 2px solid yellow;
+}
+#content {
+   flex: 4;
+   border: 2px solid green;
 }
 
