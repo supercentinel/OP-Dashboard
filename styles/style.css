@@ -4,9 +4,7 @@ body {
    display: flex;
 }
 
-img { /* svg on an img tag */
-  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
-          filter: invert(.75);
+.svgIcon { /* svg on an img tag */
 }
 
 #sideNav {
@@ -29,6 +27,8 @@ img { /* svg on an img tag */
 
 #navLogo > h1 > img {
    height: 1em;
+   -webkit-filter: invert(.75) !important; /* safari 6.0 - 9.0 */
+   filter: invert(.75) !important;
 }
 
 #navItems {
@@ -46,6 +46,8 @@ img { /* svg on an img tag */
 
 .itemLogo {
    height: 1em;
+   -webkit-filter: invert(.75) !important; /* safari 6.0 - 9.0 */
+   filter: invert(.75) !important;
 }
 
 main {
@@ -80,6 +82,8 @@ main {
    height: 2em;
    margin: 5px;
    flex: 0.5;
+   -webkit-filter: invert(.75) !important; /* safari 6.0 - 9.0 */
+   filter: invert(.75) !important;
 }
 
 #searchInput {
@@ -97,6 +101,34 @@ main {
 
 #userSpace {
    flex: 1;
+   display: flex;
+   justify-content: flex-end;
+}
+
+#userSpace > .userImage {
+   border-radius: 50%;
+   height: 3em;
+   flex: 0.5;
+   margin-top: 4px;
+
+}
+
+#userSpace > img {
+   height: 2em;
+   margin-top: 15px;
+   flex: 1.5;
+}
+
+#userSpace > .userImage:hover {
+   cursor: pointer;
+   border: 3px solid pink;
+}
+
+#userSpace > p {
+   flex: 3;
+   margin-left: 10%;
+   margin-top: 5%;
+   font-weight: 600;
 }
 
 #userBar {
