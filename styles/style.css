@@ -4,9 +4,6 @@ body {
    display: flex;
 }
 
-.svgIcon { /* svg on an img tag */
-}
-
 #sideNav {
    flex: 1;
    color: beige;
@@ -215,6 +212,16 @@ main {
    background-color: whitesmoke;
 }
 
+.proyect > h1 {
+   margin-left: 10px;
+   font-size: 1em;
+}
+
+.proyect > p {
+   margin-left: 10px;
+   font-size: 0.8em;
+}
+
 #Anouncements {
    grid-area: 1/5/2/5;
    display: flex;
@@ -235,6 +242,16 @@ main {
    border-left: 1px solid black;
    border-right: 1px solid black;
    background-color: whitesmoke;
+}
+
+#anouncementsContent > .anouncement > h1 {
+   margin-left: 10px;
+   font-size: 0.75em;
+}
+
+#anouncementsContent > .anouncement > p {
+   margin-left: 10px;
+   font-size: 0.5em;
 }
 
 #anouncementsContent > #firstAnouncement {
@@ -269,6 +286,33 @@ main {
    background-color: whitesmoke;
    border-right: 1px solid black;
    border-left: 1px solid black;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+.trend > img {
+   color: crimson;
+   height: 2.5em;
+   justify-self: center;
+   align-self: center;
+   border-radius: 50%;
+   grid-column: 1/2;
+   grid-row: 1/3;
+}
+
+.trend > h1 {
+   margin-left: 10px;
+   font-size: 0.6em;
+   grid-column: 2/4;
+   grid-row: 1/2;
+}
+
+#trendingContent > .trend > h2 {
+   margin-left: 10px;
+   font-size: 0.5em;
+   grid-column: 2/4;
+   grid-row: 2/3;
 }
 
 #trendingContent > #firstTrend {
