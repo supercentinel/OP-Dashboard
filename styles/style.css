@@ -55,17 +55,17 @@ main {
    height: 100vh;
    display: flex;
    flex-direction: column;
+   background-color: beige;
 }
 
 #topBar {
    flex: 1;
    display: flex;
    flex-direction: column;
-   border: 2px solid red;
 }
 
 #searchBar {
-   flex: 1;
+   flex: 0.5;
    display: flex;
 }
 
@@ -121,7 +121,6 @@ main {
 
 #userSpace > .userImage:hover {
    cursor: pointer;
-   border: 3px solid pink;
 }
 
 #userSpace > p {
@@ -132,11 +131,57 @@ main {
 }
 
 #userBar {
-   flex: 1.5;
-   border: 2px solid yellow;
+   flex: 0.65;
+   display: flex;
 }
+
+#userInfo {
+   flex: 1;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+#userInfo > img {
+   margin-left: 10%;
+   height: 5em;
+   border-radius: 50%;
+   flex: 1;
+}
+
+#userInfo > .textContent {
+   flex: 6;
+   margin-left: 10%;
+}
+.textContent > .welcomeMsg {
+   margin-bottom: 0;
+}
+
+.textContent > .userName {
+   margin-top: 0;
+   font-size: 1.5em;
+}
+
+#userActions {
+   flex: 1;
+   display: flex;
+}
+
+#userActions > button {
+   flex: 1;
+   background-color: crimson;
+   border-radius: 25px;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   margin-right: 5%;
+   margin-left: 5%;
+   border: none;
+   color: ivory;
+   font-weight: 600;
+}
+
 #content {
    flex: 4;
-   border: 2px solid green;
 }
 
